@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/poad/es-examples#readme",
   "devDependencies": {
-    "electron": "^15.3.2",
+    "electron": "^16.0.4",
     "electron-builder": "^22.14.9",
     "eslint": "^8.4.0",
     "eslint-plugin-import": "^2.25.3"
