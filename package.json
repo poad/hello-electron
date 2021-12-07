@@ -1,0 +1,29 @@
+{
+  "name": "hello-electron",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build-win && node build-mac && node build-linux",
+    "start": "electron .",
+    "lint": "eslint --ext .js,.jsx src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/poad/es-examples.git"
+  },
+  "author": "poad",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/poad/es-examples/issues"
+  },
+  "homepage": "https://github.com/poad/es-examples#readme",
+  "devDependencies": {
+    "electron": "^15.3.2",
+    "electron-builder": "^22.14.9",
+    "eslint": "^8.4.0",
+    "eslint-plugin-import": "^2.25.3"
+  },
+  "dependencies": {}
+}
