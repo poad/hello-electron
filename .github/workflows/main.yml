@@ -23,10 +23,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Use Node.js 14.x
+    - name: Use Node.js 16.x
       uses: actions/setup-node@v2
       with:
-        node-version: 14.x
+        node-version: 16.x
         check-latest: true
 
     - name: update
@@ -54,14 +54,14 @@ jobs:
       if: success() && env.CHANGE_STATE == 'changed'
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.PERSONAL_TOKEN_FOR_GITHUB_ACTIONS }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ env.BRANCH_NAME }}
 
     - name: Push Changes
       if: success() && env.CHANGE_STATE == 'changed'
       uses: ad-m/github-push-action@master
       with:
-        github_token: ${{ secrets.PERSONAL_TOKEN_FOR_GITHUB_ACTIONS }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ env.BRANCH_NAME }}
 
     - name: Prepare create pull request
@@ -77,7 +77,7 @@ jobs:
         head_branch: ${{ env.BRANCH_NAME }}
         title: ${{ format('Auto update at {0}', env.TIMESTAMP) }}
         body: ${{ format('Update the modules at {0}', env.TIMESTAMP) }}
-        github_token: ${{ secrets.PERSONAL_TOKEN_FOR_GITHUB_ACTIONS }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         repository: ${{ env.REPO_NAME }}
         owner: ${{ github.repository_owner }}
 
@@ -116,7 +116,7 @@ jobs:
       uses: poad/github-pull-request-auto-merge-enable-action@v1.0.1
       with:
         pull_request_id: ${{ env.PULL_REQUEST_ID }}
-        github_token: ${{ secrets.PERSONAL_TOKEN_FOR_GITHUB_ACTIONS }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         repository: ${{ github.event.repository.name }}
         owner: ${{ github.repository_owner }}
         merge_method: SQUASH

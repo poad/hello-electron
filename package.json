@@ -11,18 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/poad/es-examples.git"
+    "url": "git+ssh://git@github.com/poad/hello-electron.git"
   },
   "author": "poad",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/poad/es-examples/issues"
+    "url": "https://github.com/poad/hello-electron/issues"
   },
-  "homepage": "https://github.com/poad/es-examples#readme",
+  "homepage": "https://github.com/poad/hello-electron#readme",
   "devDependencies": {
-    "electron": "^16.0.4",
+    "electron": "^16.0.5",
     "electron-builder": "^22.14.9",
-    "eslint": "^8.4.1",
+    "eslint": "^8.5.0",
     "eslint-plugin-import": "^2.25.3"
   },
   "dependencies": {}
