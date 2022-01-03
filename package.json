@@ -23,7 +23,7 @@
     "electron": "^16.0.5",
     "electron-builder": "^22.14.11",
     "eslint": "^8.6.0",
-    "eslint-plugin-import": "^2.25.3"
+    "eslint-plugin-import": "^2.25.4"
   },
   "dependencies": {}
 }
