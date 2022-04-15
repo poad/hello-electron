@@ -25,5 +25,8 @@
     "eslint": "^8.13.0",
     "eslint-plugin-import": "^2.26.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "resolutions": {
+    "async": "^3.2.2"
+  }
 }
