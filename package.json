@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/poad/hello-electron#readme",
   "devDependencies": {
-    "electron": "^19.0.8",
-    "electron-builder": "^23.1.0",
-    "eslint": "^8.19.0",
-    "eslint-plugin-import": "^2.26.0"
+    "electron": "*",
+    "electron-builder": "*",
+    "eslint": "*",
+    "eslint-plugin-import": "*"
   },
   "dependencies": {}
 }
